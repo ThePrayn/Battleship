@@ -1,0 +1,119 @@
+body{
+  background-color: rgb(180, 178, 178);
+}
+
+.App {
+  background-color: rgb(180, 178, 178);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header > h1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.battleshipIcon {
+  height: 60px;
+  width: 60px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.gameBoard {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.playerGrid, .computerGrid {
+  border: 2px solid rgb(0, 193, 74);
+  background-color: rgb(231, 231, 231);
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+}
+
+.infoBoard {
+  align-self: center;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoBoard > p {
+  text-align: center;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btnHolder {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgb(13, 110, 0);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  width: 102px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: rgb(9, 168, 22);
+  transition: .4s all ease;
+}
+
+.playerSquare, .computerSquare {
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.playerSquare:hover {
+  background-color: rgb(196, 196, 196);;
+}
+
+.takenSquare {
+  background-color: rgb(175, 175, 175);
+}
+
+.missSquare {
+  background-color: rgb(0, 45, 193);
+}
+
+.hitSquare {
+  background-color: rgb(168, 45, 45);
+}
+
+
+
